@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700;900&display=swap');
+
+.aboutA{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: -1;
+
+    img{
+        width: 100%;
+    }
+}
+
+.about_us{
+    width: 100%;
+    max-width: 1800px;
+    padding: 150px 95px 0 95px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+
+
+    .left-side{
+        width: auto;
+        padding-top: 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .about-us-line {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100% !important;
+            height: 30px;
+            font-family: Poppins;
+          }
+      
+          .about-us-line h3 {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+          }
+      
+          .about-us-line hr {
+            width: 95.316px;
+            height: 3.923px;
+            margin-left: 10px;
+            margin-top: 2px;
+            border: none;
+            background: linear-gradient(94deg, #FEC066 8.71%, #FFA820 69%);
+
+        }
+        h2{
+            color: #F6F6F6;
+            font-family: Poppins;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 55px;  
+            width: 100% !important;
+                        
+        }
+        
+
+        p{
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;            
+            max-width: 600px;
+            width: 100%;
+            pointer-events: none; 
+            padding-top: 4%;
+        }
+
+    }
+
+    .right-side{
+        pointer-events: none;
+        animation-name: floating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        
+    }
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@media(max-width:1270px){
+    .about_us{
+        .left-side{
+            h1{
+                font-size: 60px;
+                line-height: 60px;
+            }
+            h2{
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+        .right-side{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:1090px){
+    .about_us{
+        .left-side{
+            width: auto;
+            h1{
+                font-size: 50px;
+                line-height: 50px;
+            }
+            h2{
+                font-size: 20px;
+                line-height: 20px;
+            }
+            .line{
+                width: 150px;
+            }
+            p{
+                
+                font-size: 14px;
+                line-height: 20px;
+            }
+            
+        }
+    }
+}
+@media(max-width:975px){
+    .about_us{
+        .right-side{
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .about_us{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top:120px;
+        
+        .right-side{
+            width: 70%;
+            margin-top: 0px;
+        }
+        .left-side{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+
+            .about-us-line{
+                display: flex;
+                flex-direction: column !important;
+                text-align: center !important;
+                margin-bottom: 20px;
+
+            }
+            .about-us-line hr {
+                margin-left: 0px !important;
+                
+            }
+
+            h2{
+                text-align: center;
+            }
+            .line{
+                display: none;
+            }
+            p{
+                max-width: 400px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .about_us{
+        padding: 120px 30px 0px 30px;
+    }
+}
+
+@media(max-width:490px){
+    .about_us{
+        padding: 80px 30px 0px 30px;
+
+        .left-side{
+            h1{
+                font-size: 40px;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 15px;
+                line-height: 20px;
+            }
+            p{
+                max-width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+
+    
+}
+

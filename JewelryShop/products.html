@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+    <link href="https://cdn.sellix.io/static/css/embed.css" rel="stylesheet"/>
+
+    <!--AOS ANIMATION LINK-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href=""/>
+
+    <!--TITLE-->
+    <title>Royal Time - All Products</title>
+</head>
+<body>
+
+      <!--NAVBAR SECTION-->
+      <header>
+        <div class="limiter">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/LOGO.png" alt="">
+                    </a>
+                </div>
+
+                <ul class="navlinks" id="links" >
+                    <li class="navitems" ><a href="index.html" class="itemlinks">Home</a></li>
+                    <li class="navitems"><a href="index.html#about-us" class="itemlinks">About Us</a></li>
+                    <li class="navitems"><a href="index.html#products" class="itemlinks">Products</a></li>
+                </ul>
+
+                <div id="burger">
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <h1 class="loading">LOADING...</h1>
+        
+        <h2>ALL PRODUCTS</h2>
+        <div class="products">
+
+        </div>
+
+        <div class="glow-effect home-glow">
+            <img class="" src="assets/eclipse1.png" alt="">
+        </div>
+        <div class="glow-effect prodglow"> 
+            <img class="" src="assets/eclipse4.png" alt="">
+        </div>
+    </div>
+
+
+    
+   <!--FOOTER-->
+   <footer id="footer">
+        <div class="footer-container">
+
+            <div class="middle-footer">
+                <div class="reserved">
+                    <p> <span>Royal Time</span> © 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPT TAGS-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!--MENUBAR SCRIPT-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const links = document.getElementById('links');
+
+        burger.addEventListener('click', () => {
+            links.classList.toggle('active');
+        })
+
+        $("#links").click(() => {
+            links.classList.remove('active');
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("black");
+            }
+            else{
+                $("header").removeClass("black");
+            }
+        });
+    </script>
+
+</body>
+</html>

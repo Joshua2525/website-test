@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700;900&display=swap');
-
 .home-glow{
     position: absolute;
     top: 0;
@@ -10,7 +8,6 @@
         width: 100%;
     }
 }
-
 
 .hero-section{
     width: 100%;
@@ -32,8 +29,8 @@
         }
 
         h1{
-            color: #EC9D02;
-            font-family: Prompt;
+            color: #FFC727;
+            font-family: Poppins;
             font-size: 80px;
             font-style: normal;
             font-weight: 700;
@@ -43,7 +40,7 @@
         }
         h2{
             color: #F6F6F6;
-            font-family: Prompt;
+            font-family: Poppins;
             font-size: 50px;
             font-style: normal;
             font-weight: 700;
@@ -54,7 +51,7 @@
 
         p{
             color: #FFF;
-            font-family: Prompt;
+            font-family: Poppins;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -255,9 +252,9 @@
 
 :root {
     /*diagonal to top right*/
-    --dttrshapeWidth:200px;
-    --dttrshapeHeight:200px;
-    --dttrPosX: 30vw;
+    --dttrshapeWidth:300px;
+    --dttrshapeHeight:250px;
+    --dttrPosX: 70vw;
     --dttrPosY: 40vh;
     --dttrBgColorStart:rgba(223, 158, 0, 0.2);
     --dttrBgColorEnd:rgba(223, 158, 0, 0.2);
@@ -307,7 +304,7 @@
   .item {
     position: relative;
     width: 100%;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
   
   .box {

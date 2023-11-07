@@ -1,0 +1,210 @@
+.product-glow{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  img{
+      width: 100%;
+  }
+}
+
+.prodglow{
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: -1;
+
+  img{
+      width: 60%;
+  }
+}
+.product-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 2000px;
+    min-height: 20vh;
+    position: relative;
+    padding: 100px 70px;
+  }
+  
+  .product-container h2{
+    color: #FFC727;
+  
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+  }
+  
+  .product-container .loading {
+    position: absolute;
+    color: white;
+    margin-top: 40px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+  }
+  
+  .product-container-title {
+    display: block !important;
+    margin: 0 auto;
+    max-width: 177px;
+    color: black;
+    border-radius: 12px;
+    padding: 10px 60px;
+  }
+  
+  .product-container .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 61px;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .product-container .products .product {
+    max-width: 248px;
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100% auto;
+    background-color: #1d1d1d67;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    padding: 6px 8px 28px 8px;
+  }
+  .product-container .products .product:hover{
+    background: #FFC727;
+    transform: scale(1.1);
+    
+  }
+  .product-container .products .product:hover .text h3{
+    color: #FFFFFF;
+  }
+  .product-container .products .product:hover button{
+    background: #151515;
+  }
+  
+  .product-container .products .product .image {
+    width: 100%;
+    height: 169px !important;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    background-color: rgb(31, 29, 29);
+  }
+  
+  .product-container .products .product .text {
+    text-align: center;
+    padding: 0;
+    margin-top:10px;
+  }
+  
+  .product-container .products .product .text h3{
+    color: #FFC727;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height:40px;
+  }
+  .product-container .products .product .text p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  
+  .product-container .products .product button {
+    max-width: 189.321px;
+    width: 100%;
+    height: 46.52px;
+    border-radius: 30px;
+    background: #FFC727;  
+    border: none;
+  
+    color: #FFF;
+  
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;  
+    cursor: pointer;
+    margin-top:15px;
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+  
+  h1.loading {
+    text-align: center;
+    animation: textAnimation 2s infinite;
+  }
+  
+ 
+  @media(max-width: 870px) {
+    .product-glow{
+      img{
+          width: 50%;
+      }
+    }
+    .product-container h2{
+      font-size: 30px;  
+    }
+    
+    .product-container .loading {
+      font-size: 30px;  
+    }
+    
+    .prodglow{
+     display: none !important;
+    }
+  }
+
+  @media(max-width: 500px) {
+    .product-container {
+      padding: 100px 15px;
+    }
+  }
+  

@@ -1,0 +1,277 @@
+
+.products {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 95px 50px 95px;
+  }
+  .products .cirlce-design {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  }
+  .products h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins !important;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.75px;
+    line-height: 103%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .products span {
+    color: #FFC727;
+  }
+  .products p {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 679px;
+    width: 100%;
+    padding-top: 35px;
+  }
+  .products .view-all{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .products .view-all a{
+    width: 248px;
+    height: 68px;
+    background: #101010;
+    margin-top: 50px;
+    cursor: pointer;
+    text-decoration: none;
+  
+    color: #FFF;
+  
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .products .view-all a:hover{
+    color:#FFC727;
+    transform: scale(1.1);
+  }
+  
+  .products .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  .products .products-container .product {
+    width: 248px;
+    padding: 6px 8px 28px 8px;
+    min-height: 322px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: rgba(6, 6, 6, 0.2); /* Adjust the opacity to your liking */
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px); /* Adjust the blur radius to your liking */
+  }
+  
+  .products .products-container .product img {
+    width: 100%;
+    border-radius: 30px;
+    max-height: 169px;
+    height: 100%;
+  }
+  
+  .products .products-container .product button {
+    margin-top: 12px;
+    width: 189.32px;
+    height: 46.52px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #FFC727;
+    border: none;
+  
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  
+  }
+  
+  .products .products-container .product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 61px;
+  }
+  
+  .products .products-container .product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 61px;
+  }
+  
+  
+  
+  .products .products-container .product-list .per-product{
+    max-width: 400px;
+    width: 100%;
+    margin: 14px;
+    display: flex;
+    flex-flow: column;
+    background-color: #1d1d1d67;
+    backdrop-filter: blur(5px);
+    min-height: 269px;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 9px;  
+  }
+  
+  .products .products-container .product-list .per-product .image{
+    width: 100%;
+    height: 200px;
+    content: "";
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .products .products-container .product-list .per-product .text{
+    padding: 10px;
+    text-align: center;
+    margin-top: 18px;
+  }
+  
+  .products .products-container .product-list .per-product .info{
+    margin-top: 17px;
+  }
+  
+  .products .products-container .product-list .per-product button{
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    align-self: flex-end;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    max-width: 247px;
+    margin: 0 auto;
+    margin-top: 27px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Prompt:wght@300;400;500;600;700;900&display=swap');
+  .products .products-container .product h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+  }
+  .products .products-container .product h2 {
+    color: #FFF;
+    font-family: Prompt;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 121.5%;
+    padding-top: 15px;
+  }
+  .products .products-container .product:hover {
+    background: #FFC727;
+    transform: scale(1.1);
+  }
+  .products .products-container .product:hover button {
+    background: #151515;
+  }
+  
+  
+  @media (max-width: 1500px) {
+    .products {
+      padding: 200px 50px 50px 50px;
+    }
+    .products .products-container .product {
+      margin: 20px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .products {
+      padding: 180px 95px 50px 95px;
+    }
+    .products .glow-effect {
+      width: 100%;
+    }
+    .products .products-container .product {
+      margin: 20px;
+    }
+    .products .products-container .product h1, .products .products-container .product h2 {
+      text-align: center;
+    }
+  }
+  @media (max-width: 630px) {
+    .products {
+      padding: 140px 35px 0 35px;
+    }
+    .products h1 {
+      font-size: 42px;
+      line-height: 103%;
+    }
+    .products .view-all a{
+      width: 200px;
+      height: 68px;
+      background: #101010;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      cursor: pointer;
+      font-size: 16px;
+      
+    }
+    
+  }
+
+  @media (max-width: 435px) {
+    .products .products-container .product {
+      margin: 15px;
+    }
+  }
+  
